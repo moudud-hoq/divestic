@@ -301,6 +301,9 @@
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
   }
+  .mb-25 {
+    margin-bottom: calc(var(--spacing) * 25);
+  }
   .block {
     display: block;
   }
@@ -328,6 +331,9 @@
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
   .h-\[98px\] {
     height: 98px;
   }
@@ -348,6 +354,9 @@
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-120 {
     width: calc(var(--spacing) * 120);
@@ -419,6 +428,9 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -442,6 +454,9 @@
   }
   .gap-\[2px\] {
     gap: 2px;
+  }
+  .gap-\[5px\] {
+    gap: 5px;
   }
   .gap-\[10px\] {
     gap: 10px;
@@ -525,6 +540,9 @@
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
@@ -659,6 +677,9 @@
   .tracking-\[0\.2px\] {
     --tw-tracking: 0.2px;
     letter-spacing: 0.2px;
+  }
+  .\!text-\[\#FFA62B\] {
+    color: #FFA62B !important;
   }
   .\!text-white {
     color: var(--color-white) !important;
