@@ -226,6 +226,12 @@
   .-right-10 {
     right: calc(var(--spacing) * -10);
   }
+  .-right-24 {
+    right: calc(var(--spacing) * -24);
+  }
+  .-right-28 {
+    right: calc(var(--spacing) * -28);
+  }
   .-right-30 {
     right: calc(var(--spacing) * -30);
   }
@@ -423,6 +429,9 @@
   }
   .max-w-\[4440px\] {
     max-width: 4440px;
+  }
+  .max-w-\[10440px\] {
+    max-width: 10440px;
   }
   .max-w-max {
     max-width: max-content;
