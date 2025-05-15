@@ -5,29 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
-
+    <link href="./src/custom.css" rel="stylesheet">
     <title>Divestic</title>
-
-    <!-- Add Montserrat font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Apply Montserrat font to the body */
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
-
 </head>
 
-<body class="max-w-[1440px] mx-auto">
+<body class="">
     <!-- header and hero-->
-    <section class="heroAndHeader max-w-[1440px] bg-[url('/src/img/cover.png')] bg-cover bg-center h-full">
-        <div class="heroAndHeaderWrapper">
+    <section
+        class="heroAndHeader max-w-[1440px] mx-auto bg-[url('/src/img/cover.png')] bg-cover bg-center bg-no-repeat h-screen">
+        <div class="heroAndHeaderWrapper header w-[1050px] mx-auto ">
 
             <!-- Header -->
-            <div class="header w-[1180px] mx-auto ">
-                <div class="headerWrapper py-9 pl-8 relative">
+            <div class="header w-[1050px] mx-auto ">
+                <div class="headerWrapper py-9 relative">
                     <div class="logoAndMenu flex gap-[124px] items-center">
                         <div class="logo">
                             <h2 class="text-2xl font-bold leading-8 text-[#252B42] tracking-[0.1px]">Divestic</h2>
@@ -42,7 +32,9 @@
                                 class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Contact</a>
                         </div>
                     </div>
-                    <div class="headerButton absolute z-20 -right-5 top-0 py-9">
+
+                    <!-- absolute -->
+                    <div class="headerButton absolute z-20 -right-30 top-5 py-9">
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14"
                                 fill="none">
                                 <path
@@ -52,10 +44,10 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Hero -->
-            <div class="hero w-[1140px] mx-auto">
-                <div class="heroWrapper w-full flex justify-between items-center gap-[120px] py-[125px]">
+            <div class="hero w-[1050px] mx-auto">
+                <div class="heroWrapper w-full flex justify-between items-center gap-[50px] py-[125px]">
 
                     <div class="heroTextAndBtn w-1/2">
                         <div class="heroText flex flex-col gap-[35px]">
@@ -84,6 +76,21 @@
 
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class=".whyChooseUs w-[1050px] mx-auto">
+        <div class="whyChooseUsWrapper">
+
+            <div class="wcuText">
+                <h1 class="text-[40px] font-bold leading-[58px] tracking-[0.2px text-[#252B42]">Why Choose Us</h1>
+                <p class="text-[14px] font-medium leading-[20px] tracking-[0.2px text-[#737373]">Problems trying to
+                    resolve the conflict between
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+            </div>
+
 
         </div>
     </section>
