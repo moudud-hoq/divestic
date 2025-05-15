@@ -22,22 +22,27 @@
 
 <body class="max-w-[1440px] mx-auto">
     <!-- header and hero-->
-    <section class="hero">
-        <div class="heroWrapper">
-            <div class="header w-[1322px] mx-auto">
-                <div class="headerWrapper flex justify-between items-center w-full py-9">
-                    <div class="logoAndMenu flex justify-between items-center w-1/2 pl-[136px]">
+    <section class="heroAndHeader max-w-[1440px] bg-[url('/src/img/cover.png')] bg-cover bg-center h-full">
+        <div class="heroAndHeaderWrapper">
+
+            <!-- Header -->
+            <div class="header w-[1180px] mx-auto ">
+                <div class="headerWrapper py-9 pl-8 relative">
+                    <div class="logoAndMenu flex gap-[124px] items-center">
                         <div class="logo">
                             <h2 class="text-2xl font-bold leading-8 text-[#252B42] tracking-[0.1px]">Divestic</h2>
                         </div>
-                        <div class="headerLinks">
+                        <div class="headerLinks flex gap-5">
                             <a href="#" class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Home</a>
-                            <a href="#" class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Product</a>
-                            <a href="#" class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Pricing</a>
-                            <a href="#" class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Contact</a>
+                            <a href="#"
+                                class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Product</a>
+                            <a href="#"
+                                class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Pricing</a>
+                            <a href="#"
+                                class="text-sm font-semibold text-[#737373] leading-6 tracking-[0.2px]">Contact</a>
                         </div>
                     </div>
-                    <div class="headerButton w-1/2 flex justify-end items-center">
+                    <div class="headerButton absolute z-20 -right-5 top-0 py-9">
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14"
                                 fill="none">
                                 <path
@@ -47,6 +52,39 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Hero -->
+            <div class="hero w-[1140px] mx-auto">
+                <div class="heroWrapper w-full flex justify-between items-center gap-[120px] py-[125px]">
+
+                    <div class="heroTextAndBtn w-1/2">
+                        <div class="heroText flex flex-col gap-[35px]">
+                            <h1 class="text-[#252B42] text-[58px] font-extrabold leading-[80px] tracking-[-0.2px]">
+                                EMPOWER YOUR BUSINESS
+                            </h1>
+                            <p
+                                class="text-[#737373] text-[20px] font-medium leading-[30px] tracking-[-0.2px] mr-[135px]">
+                                We know how large objects will act,
+                                but things on a small scale.
+                            </p>
+                        </div>
+                        <div class="heroBtn flex gap-[10px] mt-[35px]">
+                            <button
+                                class="bg-[#FFA62B] text-white text-[14px] font-bold leading-[28px] tracking-[-0.2px] py-[10px] px-9 rounded-full">
+                                Get Started
+                            </button>
+                            <button
+                                class="text-[#00A0C1] text-[14px] font-bold leading-[28px] tracking-[-0.2px] py-[10px] px-9 rounded-full border-2 border-[#00A0C1]">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="heroBlank w-1/2"></div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
