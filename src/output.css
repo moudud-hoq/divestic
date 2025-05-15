@@ -7,8 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -168,8 +175,29 @@
   .table {
     display: table;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-21 {
+    width: calc(var(--spacing) * 21);
+  }
   .w-\[1050px\] {
     width: 1050px;
+  }
+  .w-\[1190px\] {
+    width: 1190px;
+  }
+  .w-\[1322px\] {
+    width: 1322px;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-\[1440px\] {
     max-width: 1440px;
@@ -183,16 +211,92 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .pl-\[13\] {
+    padding-left: 13;
+  }
+  .pl-\[136\] {
+    padding-left: 136;
+  }
+  .pl-\[136pc\] {
+    padding-left: 136pc;
+  }
+  .pl-\[136px\] {
+    padding-left: 136px;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.1\] {
+    --tw-tracking: 0.1;
+    letter-spacing: 0.1;
+  }
+  .tracking-\[0\.1px\] {
+    --tw-tracking: 0.1px;
+    letter-spacing: 0.1px;
+  }
+  .tracking-\[0\.2\] {
+    --tw-tracking: 0.2;
+    letter-spacing: 0.2;
+  }
+  .tracking-\[0\.2px\] {
+    --tw-tracking: 0.2px;
+    letter-spacing: 0.2px;
+  }
+  .text-\[\#252B42\] {
+    color: #252B42;
+  }
+  .text-\[\#252B\] {
+    color: #252B;
+  }
+  .text-\[\#737373\] {
+    color: #737373;
   }
   .underline {
     text-decoration-line: underline;
@@ -207,6 +311,18 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -216,6 +332,9 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
     }
   }
